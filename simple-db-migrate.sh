@@ -1,8 +1,8 @@
 #!/bin/bash
-source .idd-db-migrate-config
+source .db-migrate-config
 
 DUMPDB="
-source .idd-db-migrate-config;
+source .db-migrate-config;
 mysqldump -u \$DB_USER -p\$DB_PASS \$DB_NAME > ${1}.sql;
 gzip ${1}.sql;"
 
